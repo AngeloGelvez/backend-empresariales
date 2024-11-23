@@ -1,0 +1,17 @@
+com\hoteles\hotelesBackend\utilidades\Respuesta.class
+com\hoteles\hotelesBackend\controllers\ResenaController.class
+com\hoteles\hotelesBackend\controllers\UsuarioController.class
+com\hoteles\hotelesBackend\repository\ReservaRepository.class
+com\hoteles\hotelesBackend\controllers\HotelController.class
+com\hoteles\hotelesBackend\entidades\Usuario.class
+com\hoteles\hotelesBackend\entidades\Reserva.class
+com\hoteles\hotelesBackend\controllers\ReservaController.class
+com\hoteles\hotelesBackend\HotelesBackendApplication.class
+com\hoteles\hotelesBackend\HotelesBackendApplication$1.class
+com\hoteles\hotelesBackend\entidades\Resena.class
+com\hoteles\hotelesBackend\controllers\Login.class
+com\hoteles\hotelesBackend\entidades\LoginEntity.class
+com\hoteles\hotelesBackend\repository\ResenaRepository.class
+com\hoteles\hotelesBackend\repository\HotelRepository.class
+com\hoteles\hotelesBackend\repository\UsuarioRepository.class
+com\hoteles\hotelesBackend\entidades\Hotel.class
