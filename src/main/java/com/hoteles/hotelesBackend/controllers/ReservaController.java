@@ -34,6 +34,24 @@ public class ReservaController {
         }
     }
 
+    @GetMapping("/todas/{idUsuario}")
+    public Object todosHotelesUsuarios(@PathVariable String idUsuario) {
+        try {
+            return reservaRepository.findByUsuario_Id(idUsuario);
+        }catch(Error e) {
+            return Respuesta.responseJson("Ocurrio un error", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/todas/hotel/{idHotel}")
+    public Object todosHoteles(@PathVariable String idHotel) {
+        try {
+            return reservaRepository.findByHotel_id(idHotel);
+        }catch(Error e) {
+            return Respuesta.responseJson("Ocurrio un error", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @GetMapping("/{id}")
     public Object porId(@PathVariable String id) {
         try {

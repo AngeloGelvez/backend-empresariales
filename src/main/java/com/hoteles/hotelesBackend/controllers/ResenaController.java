@@ -46,6 +46,15 @@ public class ResenaController {
         }
     }
 
+    @GetMapping("/todas/usuario/{idUsuario}")
+    public Object todosHotelesUsuarios(@PathVariable String idUsuario) {
+        try {
+            return resenaRepository.findByUsuario_Id(idUsuario);
+        }catch(Error e) {
+            return Respuesta.responseJson("Ocurrio un error", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     //BUSCAR RESENAS POR ID DEL HOTEL
     @GetMapping("/todas/{idHotel}")
     public Object idHotel(@PathVariable String idHotel) {

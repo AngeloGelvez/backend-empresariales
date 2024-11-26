@@ -11,4 +11,6 @@ public interface ResenaRepository extends MongoRepository<Resena, String> {
 
     // Método para encontrar reseñas por el ID del hotel
     List<Resena> findByHotel_Id(String hotelId);
+
+    List<Resena> findByUsuario_Id(String usuarioId);
 }
